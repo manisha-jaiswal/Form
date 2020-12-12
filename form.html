@@ -1,0 +1,163 @@
+<!--It is an "information" to the browser about what document type to expect.-->
+<!DOCTYPE html>
+
+<!--Html is a markup language that defines the structure of your content-->
+<html>
+	
+	<!--head contains information about a web page's properties and links to external related files.-->
+    <head>
+		
+		<!--<title> tag defines the title of the document-->
+        <title>Registration Form</title>
+		
+		<!-- meta defines metadata about an HTML document. Metadata is data (information) about data
+			The viewport is the user's visible area of a web page
+			content gives the value associated with the  name attribute
+			width=device-width part sets the width of the page to follow the screen-width of the device
+			initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+		-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--style attribute is used to add styles to an element, such as color, font, size, and more.-->
+        <style>
+         
+		input[type=text], select {
+			width: 100%; 
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		
+		input[type=email], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=password], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+        
+		input[type=submit] {
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+input[type=submit]:hover { 
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px; 
+  background-color: #f2f2f2; 
+  padding: 20px; 
+}
+            </style>
+    </head>
+	
+	<!-- defines the document's body-->
+<body>
+
+<!--marque is used to insert a scrolling area of text-->
+<marquee width="60%" direction="right" height="100px">
+
+<!-- Here h1 is for heading and b defines bold-->
+<h1><b>Registration Form</b></h1>
+</marquee>
+
+<!--it is used as a container for HTML elements - which is easily styled by using the class or id attribute.-->
+<div>
+
+<!--Form is used to collect user input. The user input is most often sent to a server for processing.-->
+<form >
+
+<!--It is used to group related elements in a form. it draws a box around the related elements.-->
+    <fieldset>
+	
+	<!--creates a hyperlink to web pages-->
+    <a href="#">About</a><br><br>
+
+	<!-- label represents a caption for an element-->
+    <label> First Name </label>
+	
+	<!-- lIt takes input first name from the user-->
+    <input type="text" name="firstname" size="15" /> <br> 
+
+    <label> Last Name: </label>
+	
+	<!-- lIt takes input Last name from the user-->
+    <input type="text" name="lastname" size="15" /> <br>
+
+    <label for="email">Enter your email:</label>
+	
+	<!-- lIt takes input Email from the user-->
+    <input type="email" id="email" name="email" size="15" /><br>
+
+    <label for="pwd">Password:</label>
+	
+	<!-- lIt takes input password in password format from the user-->
+    <input type="password" id="pwd" name="pwd" minlength="8"><br>
+
+    <label for="birthday">Birthday:</label>
+	
+	<!-- lIt takes input date of birth from the user-->
+    <input type="date" id="birthday" name="birthday"><br>
+
+    <label>
+        Gender :
+    </label><br>
+	
+	<!-- input type=radio generate radio button where we select any one from all  from the user-->
+    <input type="radio" name="male" /> Male <br>
+    <input type="radio" name="female" /> Female <br>
+    <input type="radio" name="other" /> Other<br>
+
+    <label>
+        Choose a car :
+    </label>
+	
+	<!-- Select - it is used for create drop down list  -->
+    <select>
+        <option value="Audi">AUDI</option>
+        <option value="BMW">BMW</option>
+        <option value="Hyundai">HYUNDAI HONDA</option>
+        <option value="Tata">TATA KIA</option>
+        <option value="jeep">JEEP</option>
+        <option value="mercedes">MERCEDES</option>
+        <option value="datsun">DATSUN</option>
+    </select><br>
+	
+<!--it is an unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list items will be marked with bullets by default-->
+    <ul>
+        <li>KR</li>
+        <li>KL</li>
+        <li>TR</li>
+    </ul>
+	
+<!-- Here we take a submit button  where we can click here and perform the task -->
+    <input type="button" value="Register" /><br>
+	
+	<!--  Here we reset or clear all the data which is given by user  -->
+    <input type="reset" value="Reset" /></fieldset>
+</form></div>
+</body>
+</html>
